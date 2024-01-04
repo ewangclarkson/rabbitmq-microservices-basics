@@ -1,0 +1,16 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: RabbitMq-Producer
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+rabbitmq:
+  queue: "message_queue"
+  exchange: "exchange_name"
+  routing-key: "message_routing_key"
+
